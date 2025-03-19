@@ -1,0 +1,32 @@
+.wrapper{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+
+  
+  & .content{
+    width: 32rem;
+    height: auto;
+  }
+  
+  .left{
+    & small{
+      font: var(--overline);
+      text-transform: uppercase;
+      background: linear-gradient(to right, #C7C9CC 0%, #3D3D3D 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    & h1{
+      font: var(--tt-large);
+      color: var(--ct-primary);
+      text-transform: uppercase;
+      margin-bottom: 2.375rem;
+    }
+  }
+ 
+}
