@@ -1,10 +1,13 @@
+@import url(./fields/input.css);
+@import url(./fields/switch-toggle.css);
+@import url(./fields/button.css);
+
 .wrapper{
   width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
   gap: 5rem;
-
   
   & .content{
     width: 32rem;
@@ -28,5 +31,48 @@
       margin-bottom: 2.375rem;
     }
   }
- 
+
+  .right{
+    padding-block: 2.031rem;
+    padding-inline: 2.031rem;
+    & h2{
+      font: var(--lb-medium);
+      color: var(--ct-primary);
+      text-transform: uppercase;
+    }
+
+    & .numbers-wrapper{
+      width: inherit;
+      height: auto;
+      margin-top: 2.5rem;
+      display: flex;
+      gap: .75rem;
+
+      & div{
+        display: flex;
+        flex-direction: column;
+
+        & label{
+          font: var(--lb-medium);
+          color: var(--ct-secondary);
+          text-align: center;
+          text-transform: uppercase;
+          margin-bottom: .5rem;
+        }
+
+      }
+    }
+
+
+    .switch-container{
+      margin-top: 1.75rem;
+      display: flex;
+      gap: .5rem;
+      margin-bottom: 2.5rem;
+      & span{
+        font: var(--pp-medium);
+        color: var(--ct-primary);
+      }
+    }
+  }
 }

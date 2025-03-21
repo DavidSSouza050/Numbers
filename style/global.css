@@ -33,7 +33,7 @@
   --ff-roboto-F: "Roboto Flex", sans-serif;
 
   /* Title */
-  --tt-large: 800 4.5rem/130% var(--ff-sora);
+  --tt-large: 800 4.4rem/130% var(--ff-sora);
   --tt-medium: 800 2.5rem/130% var(--ff-sora);
   --tt-small: 700 2rem/130% var(--ff-sora);
 
@@ -46,12 +46,17 @@
   --pp-small: 500 0.75rem/150% var(--ff-roboto-F);
   
   /* label */
-  --lb-medium: 700 1.25rem/150% var(--ff-roboto-F);
-  --lb-small: 700 1rem/150% var(--ff-roboto-F);
+  --lb-large: 700 1.25rem/150% var(--ff-roboto-F);
+  --lb-medium: 700 1rem/150% var(--ff-roboto-F);
 }
 
 
 body{
   background: url(../assets/background.png) repeat, #000;
   font-family: var(--ff-roboto-F);
+}
+
+p{
+  font: var(--pp-small);
+  color: var(--ct-secondary);
 }

@@ -9,10 +9,6 @@
       font: var(--pp-medium);
       color: var(--ct-brand);
     }
-    & p{
-      font: var(--pp-small);
-      color: var(--ct-secondary);
-    }
   }
 
 }

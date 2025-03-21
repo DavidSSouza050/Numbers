@@ -1,14 +1,16 @@
 main{
   width: 100vw;
   height: 100vh;
-  background-image: linear-gradient(to bottom, #000000e9 30%, #000000d0 70%);
+  z-index: -5;
+  background: linear-gradient(to bottom, #000000e9 30%, #000000d0 70%);
   display: flex;
   justify-content: center;
   align-items: center;
 
   .container{
     width: 68.625rem;
-    height: 33.688rem;
+    min-height: 33.688rem;
+    height: auto;
 
     & header{
       width: 10.75rem;

@@ -1,0 +1,21 @@
+input[type="number"]{
+  width: 5.375rem;
+  height: 5.5rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: var(--bg-secondary);
+
+  font: var(--tt-small);
+  color: var(--ct-primary);
+  text-align: center;
+  
+  /* Removendo setas da input number */
+  /* Removendo do firefox */
+  appearance: none;
+  -moz-appearance: textfield;
+ &::-webkit-inner-spin-button,&::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+}
