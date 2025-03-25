@@ -23,6 +23,58 @@
         <div class="content left">
           <small>online - gratuito</small>
           <h1>sorteador de números</h1>
+
+          <div class="onlyMobile">
+            <h2>quero sortear:</h2>
+            <p>
+              Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!
+            </p>
+            
+            <div class="numbers-wrapper">
+              
+              <div>
+                <label for="qtd-num">Números</label>
+                <div class="rainbow-field">
+                  <input type="number" name="qtd-num" id="qtd-num">
+                </div>
+              </div>
+
+              <div>
+                <label for="initial-num">DE</label>
+                <div class="rainbow-field">
+                  <input type="number" name="initial-num" id="initial-num">
+                </div>
+              </div>
+
+              <div>
+                <label for="terminal-num">ATÉ</label>
+                <div class="rainbow-field">
+                <input type="number" name="terminal-num" id="terminal-num">
+                </div>
+              </div>
+              
+            </div>
+
+
+            <div class="switch-container">
+
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+              </label>
+              <span>Não repetir número</span>
+              
+            </div>   
+
+            <div class="container-button">
+
+              <button>
+                Sortear 
+                <img src="./assets/icons/arrow-right.svg" alt="" >
+              </button>
+              
+            </div>
+          </div>
           
           <div class="paragraph-wrapper">
             <img src="./assets/icons/person.svg" alt="">
@@ -41,7 +93,7 @@
           </div>
 
         </div>
-        <div class="content right">
+       <div class="content right onlyDesktop">
           <h2>quero sortear:</h2>
           <p>
             Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!
@@ -51,17 +103,23 @@
             
             <div>
               <label for="qtd-num">Números</label>
-              <input type="number" name="qtd-num" id="qtd-num">
+              <div class="rainbow-field">
+                <input type="number" name="qtd-num" id="qtd-num">
+              </div>
             </div>
 
             <div>
               <label for="initial-num">DE</label>
-              <input type="number" name="initial-num" id="initial-num">
+              <div class="rainbow-field">
+                <input type="number" name="initial-num" id="initial-num">
+              </div>
             </div>
 
             <div>
               <label for="terminal-num">ATÉ</label>
+              <div class="rainbow-field">
               <input type="number" name="terminal-num" id="terminal-num">
+              </div>
             </div>
             
           </div>
@@ -76,8 +134,6 @@
             <span>Não repetir número</span>
             
           </div>   
-          
-
 
           <div class="container-button">
 

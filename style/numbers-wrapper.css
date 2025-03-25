@@ -1,0 +1,65 @@
+.numbers-wrapper{
+  width: inherit;
+  height: auto;
+  margin-top: 2.5rem;
+  display: flex;
+  gap: .75rem;
+
+  & div{
+    display: flex;
+    flex-direction: column;
+
+    &:hover, &:focus-within{
+      & label{
+        color: var(--bg-brand);
+      }
+    }
+
+    & label{
+      font: var(--lb-medium);
+      color: var(--ct-secondary);
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: .5rem;
+      transition: 200ms ease;
+    }
+
+
+    & .rainbow-field{
+      width: 5.6rem;
+      height: 5.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: .5rem;
+      transition: 200ms ease;
+      &:hover, &:focus-within{
+        background: linear-gradient(45deg,var(--ac-green) 0%, var(--ac-lime) 14.84%, var(--ac-red) 32.15%, var(--ac-pink) 65.79%, var(--ac-blue) 84.58%);
+        background-size: 300% 300%;
+        animation: rotateGradient 3s linear alternate infinite;
+      }
+    }
+
+  }
+}
+
+
+
+@keyframes rotateGradient{
+  0% {
+   
+   background-position: 0% 30%;
+ }
+ 25% {
+   background-position: 100% 30%;
+ }
+ 50% {
+   background-position: 100% 60%;
+ }
+ 75% {
+   background-position: 0% 70%;
+ }
+ 100% {
+   background-position: 0% 30%;
+ }
+}

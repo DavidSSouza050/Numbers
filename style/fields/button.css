@@ -1,7 +1,8 @@
 
 .container-button{
-  width: 30.4rem;
+  width: inherit;
   height: 3.8rem;
+  padding: .15rem;
 
   display: flex;
   align-items: center;
@@ -9,10 +10,10 @@
   border-radius: .5rem;
   transition: 500ms ease;
 
-  &:hover{
-    background: linear-gradient(45deg,#77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
+  &:hover, &:focus-within{
+    background: linear-gradient(45deg,var(--ac-green) 0%, var(--ac-lime) 14.84%, var(--ac-red) 32.15%, var(--ac-pink) 65.79%, var(--ac-blue) 84.58%);
     background-size: 300% 300%;
-    animation: rotateGradient 3s linear infinite;
+    animation: rotateGradient 3s linear alternate infinite;
   }
 
   & button{
@@ -46,7 +47,20 @@
 
 
 @keyframes rotateGradient{
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+   0% {
+    
+    background-position: 0% 30%;
+  }
+  25% {
+    background-position: 100% 30%;
+  }
+  50% {
+    background-position: 100% 60%;
+  }
+  75% {
+    background-position: 0% 70%;
+  }
+  100% {
+    background-position: 0% 30%;
+  }
 }

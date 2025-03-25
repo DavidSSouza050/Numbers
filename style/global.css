@@ -48,6 +48,9 @@
   /* label */
   --lb-large: 700 1.25rem/150% var(--ff-roboto-F);
   --lb-medium: 700 1rem/150% var(--ff-roboto-F);
+
+  
+
 }
 
 
@@ -59,4 +62,29 @@ body{
 p{
   font: var(--pp-small);
   color: var(--ct-secondary);
+}
+
+.onlyMobile{
+  display: none;
+}
+
+/* .onlyDesktop{
+  display: flex;
+} */
+
+
+
+@media (width <= 48em) {
+
+  .onlyMobile{
+    display: flex;
+  }
+
+  .onlyDesktop{
+    display: none !important;
+  }
+
+ :root{
+  --px: 2.2rem;
+ }
 }

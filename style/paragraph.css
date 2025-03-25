@@ -1,6 +1,6 @@
 .paragraph-wrapper{
-  display: flex;
   align-items: start;
+  display: flex;
   gap: 0.5rem;
   margin-bottom: 2.25rem;
 
@@ -9,6 +9,10 @@
       font: var(--pp-medium);
       color: var(--ct-brand);
     }
+  }
+
+  @media (width <= 48em) {
+    margin-block: 2.25rem;
   }
 
 }

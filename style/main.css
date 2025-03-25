@@ -8,7 +8,8 @@ main{
   align-items: center;
 
   .container{
-    width: 68.625rem;
+    max-width: 68.625rem;
+    width: 100%;
     min-height: 33.688rem;
     height: auto;
 
@@ -33,4 +34,22 @@ main{
 
     
   }
+}
+
+@media (width <= 48em) {
+
+  main{
+    align-items: start; 
+    padding-top: 2.75rem;
+
+    .container{
+      & header{
+        margin-inline: auto;
+        margin-bottom: 2.875rem;
+      }
+
+      
+    }
+  }
+ 
 }

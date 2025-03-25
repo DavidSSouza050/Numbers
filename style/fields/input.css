@@ -4,6 +4,7 @@ input[type="number"]{
   border: none;
   border-radius: .5rem;
   background-color: var(--bg-secondary);
+  outline: none;
 
   font: var(--tt-small);
   color: var(--ct-primary);

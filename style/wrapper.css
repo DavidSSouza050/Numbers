@@ -1,6 +1,7 @@
 @import url(./fields/input.css);
 @import url(./fields/switch-toggle.css);
 @import url(./fields/button.css);
+@import url(./numbers-wrapper.css);
 
 .wrapper{
   width: 100%;
@@ -10,7 +11,8 @@
   gap: 5rem;
   
   & .content{
-    width: 32rem;
+    max-width: 32rem;
+    width: 100%;
     height: auto;
   }
   
@@ -33,36 +35,13 @@
   }
 
   .right{
-    padding-block: 2.031rem;
-    padding-inline: 2.031rem;
+    padding: 2.031rem;
+
     & h2{
       font: var(--lb-medium);
       color: var(--ct-primary);
       text-transform: uppercase;
     }
-
-    & .numbers-wrapper{
-      width: inherit;
-      height: auto;
-      margin-top: 2.5rem;
-      display: flex;
-      gap: .75rem;
-
-      & div{
-        display: flex;
-        flex-direction: column;
-
-        & label{
-          font: var(--lb-medium);
-          color: var(--ct-secondary);
-          text-align: center;
-          text-transform: uppercase;
-          margin-bottom: .5rem;
-        }
-
-      }
-    }
-
 
     .switch-container{
       margin-top: 1.75rem;
@@ -76,3 +55,41 @@
     }
   }
 }
+
+
+@media (width <= 48em) {
+  .left{
+    padding-inline: var(--px);
+    & h1{
+      font: var(--tt-medium) !important;
+      margin-inline: auto;
+    }
+
+    & .onlyMobile{
+      flex-direction: column;
+    }
+  }
+
+  .onlyMobile{
+
+    & h2{
+      font: var(--lb-medium);
+      color: var(--ct-primary);
+      text-transform: uppercase;
+    }
+
+    .switch-container{
+      margin-top: 1.75rem;
+      display: flex;
+      gap: .5rem;
+      margin-bottom: 2.5rem;
+      & span{
+        font: var(--pp-medium);
+        color: var(--ct-primary);
+      }
+    }
+  }
+
+
+}
+
