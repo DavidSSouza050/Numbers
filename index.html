@@ -24,7 +24,96 @@
           <small>online - gratuito</small>
           <h1>sorteador de números</h1>
 
-          <div class="onlyMobile">
+          <div class="onlyMobile ">
+
+            <div class="displayNone">
+              
+              <h2>quero sortear:</h2>
+              <p>
+                Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!
+              </p>
+              
+              <div class="numbers-wrapper">
+                
+                <div>
+                  <label for="qtd-num">Números</label>
+                  <div class="rainbow-field">
+                    <input type="number" name="qtd-num" id="qtd-num">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="initial-num">DE</label>
+                  <div class="rainbow-field">
+                    <input type="number" name="initial-num" id="initial-num">
+                  </div>
+                </div>
+
+                <div>
+                  <label for="terminal-num">ATÉ</label>
+                  <div class="rainbow-field">
+                  <input type="number" name="terminal-num" id="terminal-num">
+                  </div>
+                </div>
+                
+              </div>
+
+
+              <div class="switch-container">
+
+                <label class="switch">
+                  <input type="checkbox">
+                  <span class="slider"></span>
+                </label>
+                <span>Não repetir número</span>
+                
+              </div>   
+
+              <div class="container-button">
+
+                <button>
+                  Sortear 
+                  <img src="./assets/icons/arrow-right.svg" alt="" >
+                </button>
+                
+              </div>
+            </div>
+            <div class="container-result">
+              <h2>resultado do sorteio</h2>
+              <small>1º resultado</small>
+
+              <div class="result">
+                <label class="animation-result">23</label>
+              </div>
+
+              <div class="container-button">
+                <button>
+                  sortear novamente
+                  <img src="./assets/icons/arrow-update.svg" alt="">
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="paragraph-wrapper">
+            <img src="./assets/icons/person.svg" alt="">
+            <div class="paragraph">
+              <h3>Como funciona o sorteador de números?</h3>
+              <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
+            </div>
+          </div>
+
+          <div class="paragraph-wrapper">
+            <img src="./assets/icons/person.svg" alt="">
+            <div class="paragraph">
+              <h3>Posso escolher o intervalo dos números?</h3>
+              <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
+            </div>
+          </div>
+
+        </div>
+       <div class="content right onlyDesktop">
+          <div class="container-content displayNone" >
             <h2>quero sortear:</h2>
             <p>
               Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!
@@ -74,76 +163,26 @@
               </button>
               
             </div>
-          </div>
-          
-          <div class="paragraph-wrapper">
-            <img src="./assets/icons/person.svg" alt="">
-            <div class="paragraph">
-              <h3>Como funciona o sorteador de números?</h3>
-              <p>O sorteador utiliza um algoritmo de geração aleatória para criar números dentro do intervalo especificado pelo usuário.</p>
-            </div>
+
           </div>
 
-          <div class="paragraph-wrapper">
-            <img src="./assets/icons/person.svg" alt="">
-            <div class="paragraph">
-              <h3>Posso escolher o intervalo dos números?</h3>
-              <p>Sim, você pode definir os valores mínimo e máximo para o intervalo dos números sorteados.</p>
-            </div>
-          </div>
+          <div class="container-result">
+              <h2>resultado do sorteio</h2>
+              <small>1º resultado</small>
 
-        </div>
-       <div class="content right onlyDesktop">
-          <h2>quero sortear:</h2>
-          <p>
-            Defina o intervalo e a quantidade de números, clique em "Sortear" e veja os resultados na tela. É rápido e fácil!
-          </p>
-          
-          <div class="numbers-wrapper">
-            
-            <div>
-              <label for="qtd-num">Números</label>
-              <div class="rainbow-field">
-                <input type="number" name="qtd-num" id="qtd-num">
+              <div class="result">
+                <label>23</label>
+                <label>12</label>
+
               </div>
-            </div>
 
-            <div>
-              <label for="initial-num">DE</label>
-              <div class="rainbow-field">
-                <input type="number" name="initial-num" id="initial-num">
+              <div class="container-button">
+                <button>
+                  sortear novamente
+                  <img src="./assets/icons/arrow-update.svg" alt="">
+                </button>
               </div>
-            </div>
-
-            <div>
-              <label for="terminal-num">ATÉ</label>
-              <div class="rainbow-field">
-              <input type="number" name="terminal-num" id="terminal-num">
-              </div>
-            </div>
-            
           </div>
-
-
-          <div class="switch-container">
-
-            <label class="switch">
-              <input type="checkbox">
-              <span class="slider"></span>
-            </label>
-            <span>Não repetir número</span>
-            
-          </div>   
-
-          <div class="container-button">
-
-            <button>
-              Sortear 
-              <img src="./assets/icons/arrow-right.svg" alt="" >
-            </button>
-            
-          </div>
-
         </div>
       </div>
 
@@ -153,4 +192,4 @@
 
   <script src="./scripts/script.js"></script>
 </body>
-</html>
+</html> 

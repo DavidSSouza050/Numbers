@@ -1,9 +1,9 @@
 
 .container-button{
-  width: inherit;
-  height: 3.8rem;
+  width: 100%;
+  height: auto;
   padding: .15rem;
-
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,11 +13,11 @@
   &:hover, &:focus-within{
     background: linear-gradient(45deg,var(--ac-green) 0%, var(--ac-lime) 14.84%, var(--ac-red) 32.15%, var(--ac-pink) 65.79%, var(--ac-blue) 84.58%);
     background-size: 300% 300%;
-    animation: rotateGradient 3s linear alternate infinite;
+    animation: rotateGradient 3s linear infinite;
   }
 
   & button{
-    width: 30.125rem;
+    width: inherit;
     height: 3.5rem;
     font: var(--lb-medium);
     color: var(--ct-primary);
