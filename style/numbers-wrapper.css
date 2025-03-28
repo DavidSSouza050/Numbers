@@ -1,5 +1,5 @@
 .numbers-wrapper{
-  width: inherit;
+  width: 100%;
   height: auto;
   margin-top: 2.5rem;
   display: flex;
@@ -28,7 +28,7 @@
 
     & .rainbow-field{
       width: 5.6rem;
-      height: 5.7rem;
+      height: 4.2rem;
       display: flex;
       align-items: center;
       justify-content: center;

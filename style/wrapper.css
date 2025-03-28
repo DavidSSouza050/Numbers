@@ -54,41 +54,7 @@
       }
     }
 
-    .container-result{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      & small{
-        font: var(--overline);
-        text-transform: uppercase;
-        color: var(--ct-secondary);
-        margin-top: 0.25rem;
-      }
-
-      & .result{
-        width: 100%;
-        margin-block: 2.5rem;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap:  .5rem;
-
-        & label{
-          width: 5rem;
-          height: 5rem;
-          font: 700 3rem/150% var(--ff-roboto-M);
-          border-radius: 1.75rem;
-
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          animation: appearResult 2s linear both;
-        }
-      }
-    }
+    
 
   }
 }
@@ -126,78 +92,7 @@
       }
     }
 
-    .container-result{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      & .result{
-        width: 100%;
-        margin-block: 2.5rem;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap:  .5rem;
-
-        & label{
-          width: 5rem;
-          height: 5rem;
-          font: 700 3rem/150% var(--ff-roboto-M);
-          border-radius: 1.75rem;
-
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          
-        }
-      }
-    }
-
   }
-
 
 }
 
-
-.animation-result{
-  animation: appearResult 2s linear both;
-}
-
-@keyframes appearResult {
-  0%{
-    background-color: black;
-    transform: scale(0.1) rotate(0deg);
-  }
-  5%{
-    background-color: var(--bg-brand);
-    color: var(--ct-brand);
-    transform: scale(0.1) rotate(60deg);
-  }
-  10%{
-    background-color: var(--bg-brand);
-    color: var(--ct-brand);
-    
-    transform: scale(0.1)  rotate(90deg);
-  }
-  15%{
-    background-color: var(--bg-brand);
-    color: var(--ct-brand);
-    transform: scale(0.1) rotate(120deg);
-  }
-  25%{
-    background-color: var(--bg-brand);
-    color: var(--ct-inverse);
-    transform: rotate(150deg);
-  }
-  85%{
-    background-color: var(--bg-brand);
-    color: var(--ct-brand);
-    color: var(--ct-inverse);
-    transform: rotate(330deg);
-  }
-  100%{
-    color: var(--ct-brand);
-    transform: rotate(360deg);
-  }
-}
