@@ -1,4 +1,4 @@
-.container-result{
+.container-result, .container-result-mb {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +11,7 @@
     margin-top: 0.25rem;
   }
 
-  & .result{
+  & .result, .result-mb{
     width: 100%;
     margin-block: 2.5rem;
     display: flex;

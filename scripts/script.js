@@ -1,15 +1,15 @@
 // Elementos do formulário
-const inputs = document.querySelectorAll(".onlyDesktop input[type='number']")
+const inputs = document.querySelectorAll("input[type='number']")
 // Inputs
 const qtdNum = document.getElementById("qtd-num")
 const initNum = document.getElementById("initial-num")
 const termNum = document.getElementById("terminal-num")
 const noRepeat = document.getElementById("repeat")
 // divs
-const contentDiv = document.querySelector(".container-content")
-const containerResult = document.querySelector(".container-result")
-const numberResult = document.querySelector(".container-result small span")
-const result = document.querySelector(".result")
+const contentDiv = document.querySelector(".onlyDesktop .container-content")
+const containerResult = document.querySelector(".onlyDesktop .container-result")
+const numberResult = document.querySelector(".onlyDesktop .container-result small span")
+const result = document.querySelector(".onlyDesktop .result")
 // Buttons
 const drawButton =  document.getElementById("draw")
 const drawAgainButton = document.getElementById("draw-again")
@@ -37,6 +37,7 @@ drawButton.onclick = (event) => {
   let max = parseInt(termNum.value)
   let qtd = parseInt(qtdNum.value)
 
+  
 
   if(min >= max || max <= min){
     return alert("O número mínimo deve ser menor que o número máximo, e o número máximo deve ser maior que o número mínimo.")
@@ -50,12 +51,17 @@ drawButton.onclick = (event) => {
   // caso o repeat esteja checado irá entrar no if para gerar o número sem que ele se repita
 
   if(noRepeat.checked){
+
+    if(qtd > max){
+      return alert("A quantidade de números sorteados precisa ser menor que o número máximo!")
+    }
+
     // gerando números que não podem repetir
     appearResult(notRepeatNumber(min, max, qtd))
     divToggle()
+
   }else{
     let numbers = []
-
     // Gerando números que podem repetir
     for(let i=0; i < qtd; i++){ 
       numbers.push(generateNumber(min, max))
