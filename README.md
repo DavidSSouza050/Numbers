@@ -1,4 +1,4 @@
-🔢 Numbers
+## Numbers 🔢
 
 O Numbers é uma página web interativa que funciona como um sorteador de números, criada com o objetivo de praticar JavaScript e técnicas de responsividade.
 
